@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "463190577162",
+    "project_id": "services-app-ef22f",
+    "storage_bucket": "services-app-ef22f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463190577162:android:f09c52c9b9642781cf4ff3",
+        "android_client_info": {
+          "package_name": "com.example.serviceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADRkDMosFwzlC4bS7Qxuk6aTqkNlALJZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

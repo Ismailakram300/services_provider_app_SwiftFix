@@ -1,0 +1,75 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:serviceapp/MobileScreens/login.dart';
+import 'package:serviceapp/MobileScreens/signup.dart';
+
+
+class UIHelper extends StatelessWidget {
+  const UIHelper({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<User?>(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context, snapshot) {
+        // Debugging output
+        print('Connection State: ${snapshot.connectionState}');
+        print('Has Data: ${snapshot.hasData}');
+        print('Current User: ${FirebaseAuth.instance.currentUser?.uid}');
+
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          // Show a loading indicator while waiting for user auth state
+          return const Center(child: CircularProgressIndicator());
+        } else if (snapshot.hasData && snapshot.data != null) {
+          // If the user is authenticated, fetch their role from Firestore
+          final User user = snapshot.data!;
+
+          return FutureBuilder<DocumentSnapshot>(
+            future: FirebaseFirestore.instance
+                .collection('users')
+                .doc(user.uid)
+                .get(),
+            builder: (context, roleSnapshot) {
+              if (roleSnapshot.connectionState == ConnectionState.waiting) {
+                return const Center(child: CircularProgressIndicator());
+              }
+
+              if (roleSnapshot.hasError) {
+                return Center(child: Text('Error: ${roleSnapshot.error}'));
+              }
+
+              if (roleSnapshot.hasData && roleSnapshot.data != null) {
+                if (!roleSnapshot.data!.exists) {
+                  // Document doesn't exist
+                  return const Center(child: Text('User document does not exist.'));
+                }
+
+                // Safely access the 'role' field
+                final role = roleSnapshot.data!.get('role');
+                
+                if (role == null) {
+                  return const Center(child: Text('Role field is missing.'));
+                }
+
+                // Navigate based on the user's role
+                if (role == 'admin') {
+                  return const SignUpM(); // Admin Dashboard screen
+                } else {
+                  return const LoginM(); // Regular Home screen
+                }
+              } else {
+                // If the user's document is not found in Firestore
+                return const Center(child: Text('User not found in Firestore.'));
+              }
+            },
+          );
+        } else {
+          // If user is not authenticated, show login screens based on device width
+
+        }
+      },
+    );
+  }
+}
