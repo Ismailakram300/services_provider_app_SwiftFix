@@ -10,9 +10,7 @@ class FirebaseAuthService {
   final FirebaseStorage _storage = FirebaseStorage.instance;
 Future<UserCredential> signUpWithEmailAndPassword({
   required String email,
-  required String password,
-
-  
+  required String password,  
 }) async {
   try {
     UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
