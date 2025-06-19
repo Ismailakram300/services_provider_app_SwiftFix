@@ -43,7 +43,7 @@ dependencies:
   firebase_storage: ^12.3.6
   http: ^1.2.2
   csc_picker: ^0.2.7
-  csc_picker_plus: ^0.0.2
+  csc_picker_plus: ^0.0.3
   flutter_local_notifications: ^18.0.1
   permission_handler: ^11.3.1
   geolocator: ^13.0.2
