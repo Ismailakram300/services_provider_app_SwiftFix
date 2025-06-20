@@ -310,6 +310,7 @@ class _SignUpMState extends State<SignUpM> {
                                   ),
                             Row(
                               children: [
+
                                 Checkbox(
                                   value: _isServiceProvider,
                                   onChanged: (value) {
