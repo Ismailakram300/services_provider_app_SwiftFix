@@ -25,6 +25,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
   BitmapDescriptor? pinLocationIcon;
   void getDetails(Map singleCityData, BuildContext context) {
     print(singleCityData);
+
     Navigator.push(
       context,
       MaterialPageRoute(
