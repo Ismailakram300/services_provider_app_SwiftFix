@@ -24,6 +24,7 @@ class _AddWorkRequestState extends State<AddWorkRequest> {
 
   Future<void> _selectDate(BuildContext context) async {
     DateTime today = DateTime.now();
+
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: today,
