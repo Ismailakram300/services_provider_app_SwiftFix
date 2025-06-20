@@ -23,6 +23,7 @@ class _MyProfileState extends State<MyProfile> {
   XFile? _pickedImage;
   bool _isEmailVerified = false;
 
+
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseStorage _storage = FirebaseStorage.instance;
