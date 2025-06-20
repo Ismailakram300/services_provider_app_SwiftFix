@@ -25,6 +25,7 @@ class _WorkerBottomNavMobileState extends State<WorkerBottomNavMobile> {
     const MyHistory(),
     const Acceptedoffer(),
     const MyProfile(),
+
   ];
   void _onItemTapped(int index) {
     setState(() {
