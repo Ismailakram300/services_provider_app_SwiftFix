@@ -17,7 +17,7 @@ class _AcceptedofferState extends State<Acceptedoffer> {
       appBar: AppBar(
         backgroundColor: Colors.green.shade300,
         automaticallyImplyLeading: false,
-        title: const Text("Accepted Offer"),
+        title: const Text("Accepted  Offer"),
         centerTitle: true,
         actions: [
           IconButton(
