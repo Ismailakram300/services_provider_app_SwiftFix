@@ -18,6 +18,8 @@ class _OffersState extends State<Offers> {
       await FirebaseFirestore.instance
           .collection('dealing')
           .doc(offerId)
+
+
           .delete();
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Offer Rejected')),
