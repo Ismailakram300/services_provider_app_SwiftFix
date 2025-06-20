@@ -15,6 +15,8 @@ class _SingleCityState extends State<SingleCity> {
   final Map<String, Marker> _markers = {};
   Position? _currentPosition;
 
+
+
   // Set custom map pin
   void setCustomMapPin() async {
     pinLocationIcon = await BitmapDescriptor.fromAssetImage(
