@@ -18,6 +18,7 @@ Future<UserCredential> signUpWithEmailAndPassword({
   
 }) async {
   try {
+
     UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
       email: email,
       password: password,
