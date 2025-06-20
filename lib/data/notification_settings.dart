@@ -11,6 +11,7 @@ announcement: true,
       carPlay: true,
       criticalAlert: true,
       provisional: true,
+
       sound: true,
     );
     if(settings.authorizationStatus == AuthorizationStatus.authorized){
