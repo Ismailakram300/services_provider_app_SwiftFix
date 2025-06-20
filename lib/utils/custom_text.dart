@@ -12,6 +12,7 @@ class MyTextt extends StatelessWidget {
 
   const MyTextt({
     super.key,
+
     required this.text,
     this.fontSize = 16.0,
     this.color = Colors.black,
