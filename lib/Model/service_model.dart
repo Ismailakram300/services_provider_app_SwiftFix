@@ -8,7 +8,6 @@ class ServiceModel {
   String? location;
   String? requestId;
   String? userId;
-
   Timestamp? createdAt;
 
   String? workDate;
