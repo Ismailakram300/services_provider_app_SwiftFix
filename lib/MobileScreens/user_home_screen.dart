@@ -214,7 +214,6 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
             padding: const EdgeInsets.only(left: 13,top: 20.0,right: 5.0),
             child: Row(
               children: [
-
                 Icon(
                   size: 30,
                   Icons.location_on,
