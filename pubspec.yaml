@@ -46,6 +46,7 @@ dependencies:
   csc_picker_plus: ^0.0.3
   flutter_local_notifications: ^18.0.1
   permission_handler: ^11.3.1
+
   geolocator: ^13.0.2
   geocoding: ^3.0.0
   dropdown_search: ^6.0.1
