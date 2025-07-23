@@ -193,7 +193,6 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
 
               const SizedBox(height: 20),
               MyListTile(
-
                 title: "LogOut",
                 imageIcon: "assets/check-out.png",
                 onTap: () {
