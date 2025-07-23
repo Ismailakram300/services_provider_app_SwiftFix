@@ -19,7 +19,6 @@ class UserHomeScreen extends StatefulWidget {
 
 class _UserHomeScreenState extends State<UserHomeScreen> {
   String? _currentLocation;
-
   String? _address;
   String? _city;
   final LocationService _locationService = LocationService();
