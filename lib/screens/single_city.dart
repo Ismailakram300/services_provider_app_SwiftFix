@@ -52,6 +52,7 @@ class _SingleCityState extends State<SingleCity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(title: Text('Show Address on Map')),
       body: Column(
         children: [
