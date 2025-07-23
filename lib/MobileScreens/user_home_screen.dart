@@ -197,7 +197,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                 title: "LogOut",
                 imageIcon: "assets/check-out.png",
                 onTap: () {
-                  //firebase
+                  //firhaloll
                   FirebaseAuth.instance.signOut();
                   Navigator.pushReplacement(
                     context,
