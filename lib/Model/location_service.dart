@@ -4,7 +4,6 @@ import 'package:geolocator/geolocator.dart';
 
 class LocationService {
 
-
   Future<Position?> getCurrentLocation() async {
     try {
       bool serviceEnabled;
