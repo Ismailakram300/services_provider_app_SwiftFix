@@ -5,6 +5,7 @@ import 'package:serviceapp/MobileScreens/login.dart';
 class Acceptedoffer extends StatefulWidget {
   const Acceptedoffer({super.key});
 
+
   @override
   State<Acceptedoffer> createState() => _AcceptedofferState();
 }
