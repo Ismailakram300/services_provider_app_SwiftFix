@@ -131,7 +131,6 @@ Future<UserCredential> signUpWithEmailAndPassword({
     try {
       final userCredential = await signUpWithEmailAndPassword(
         email: email,
-
         password: password,
       );
 
