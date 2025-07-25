@@ -109,6 +109,7 @@ Future<UserCredential> signUpWithEmailAndPassword({
       throw Exception('Failed to create user document: $e');
     }
 
+
 }
 
 
