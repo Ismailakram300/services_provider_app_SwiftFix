@@ -114,6 +114,7 @@ Future<UserCredential> signUpWithEmailAndPassword({
 
   // Complete the sign-up process
   Future<void> completeSignUpProcess({
+
     required String email,
     required String password,
     required String name,
