@@ -128,7 +128,6 @@ Future<UserCredential> signUpWithEmailAndPassword({
 
 
   }) async {
-  
     try {
       final userCredential = await signUpWithEmailAndPassword(
         email: email,
