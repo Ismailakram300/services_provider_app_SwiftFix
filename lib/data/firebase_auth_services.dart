@@ -137,7 +137,6 @@ Future<UserCredential> signUpWithEmailAndPassword({
       String imageUrl = '';
       if (profileImage != null) {
 
-
         if (kIsWeb) {
           final fileBytes = await profileImage.readAsBytes();
           imageUrl = await _uploadProfileImageToStorageWeb(fileBytes, profileImage.name);
