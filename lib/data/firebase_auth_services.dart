@@ -146,6 +146,9 @@ Future<UserCredential> signUpWithEmailAndPassword({
         }
       }
 
+
+
+
       await userCredential.user?.updateDisplayName(name);
       await createUserDocument(
         userId: userCredential.user!.uid,
