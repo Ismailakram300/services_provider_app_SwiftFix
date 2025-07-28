@@ -145,10 +145,6 @@ Future<UserCredential> signUpWithEmailAndPassword({
           imageUrl = await _uploadProfileImageToStorage(mobileFile);
         }
       }
-
-
-
-
       await userCredential.user?.updateDisplayName(name);
       await createUserDocument(
         userId: userCredential.user!.uid,
