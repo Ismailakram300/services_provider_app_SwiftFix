@@ -89,6 +89,7 @@ class _SingleCityState extends State<SingleCity> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(12.0),
                   border: Border.all(
+
                     color: Colors.blue,
                     width: 2.0,
                   ),
