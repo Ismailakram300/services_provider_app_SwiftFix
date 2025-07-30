@@ -67,7 +67,7 @@ class _SingleCityState extends State<SingleCity> {
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Text(
-                        widget.cityData['address'],
+                        widget.cityData['Address'],
                         style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
