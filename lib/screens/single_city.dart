@@ -101,6 +101,7 @@ class _SingleCityState extends State<SingleCity> {
                       target: LatLng(widget.cityData['lat'], widget.cityData['lng']),
                       zoom: 7,
                     ),
+
                     markers: _markers.values.toSet(),
                   ),
                 ),
