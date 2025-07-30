@@ -53,7 +53,7 @@ class _SingleCityState extends State<SingleCity> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: AppBar(title: Text('Show Address on a Map')),
+      appBar: AppBar(title: Text('Show Address on Map')),
       body: Column(
         children: [
           Card(
