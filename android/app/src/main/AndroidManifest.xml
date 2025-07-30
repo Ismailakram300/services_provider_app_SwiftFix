@@ -9,7 +9,6 @@
             android:value="AIzaSyC--d-xPvD0h9QSD8qZxKW-Lp7KY9Z11Uk"/>
         <activity
             android:name=".MainActivity"
-
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""
