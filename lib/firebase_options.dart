@@ -12,7 +12,7 @@ import 'package:flutter/foundation.dart'
 /// ```dart
 /// import 'firebase_options.dart';
 /// // ...
-//"moma
+//"mom
 /// await Firebase.initializeApp(
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
