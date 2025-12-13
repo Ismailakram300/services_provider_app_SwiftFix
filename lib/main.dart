@@ -7,12 +7,7 @@ import 'package:serviceapp/MobileScreens/offers.dart';
 import 'package:serviceapp/MobileScreens/splash_screen.dart';
 import 'MobileScreens/Worker_Screens/show_request_details.dart';
 import 'firebase_options.dart';
-
 void main() async {
-
-
-
- 
 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
