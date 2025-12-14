@@ -5,6 +5,7 @@ class ServiceModel {
   String? fare;
   String? description;
 
+  
   String? city;
   String? location;
   String? requestId;
