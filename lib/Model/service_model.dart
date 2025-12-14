@@ -10,6 +10,9 @@ class ServiceModel {
   
   
   String? city;
+
+
+  
   
   String? location;
   String? requestId;
