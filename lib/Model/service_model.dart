@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class ServiceModel {
   String? name;
   String? fare;
+  
   String? description;
 
   
